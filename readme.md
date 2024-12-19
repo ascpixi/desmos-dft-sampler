@@ -5,6 +5,8 @@ The `gen-partials.py` script generates a LaTeX expression that you can paste int
 - the `--window` parameter determines the size of a single audio frame, in seconds - the higher the window size, the more blurry the sound becomes. This determines the size of the FFT used to check for the most audible frequencies in the signal. (sane range: `0.025` to `0.0625`)
 - the `--resolution` parameter determines the amount of partials (individual frequencies) in each audio frame. For example, a value of `1` will cause the signal to be composed of only a single sine wave. (sane range: `4` to `64`)
 
+The Desmos variables $g_c$ and $g_{ws}$ correspond to the resolution and window size respectively.
+
 > [!WARNING]
 > Copying extremely large LaTeX expressions will slow down Desmos considerably, sometimes to the point of hanging it entirely. Try experimenting with the quality settings to find the sweet-spot.
 
